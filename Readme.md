@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Yuriy Stotyka](https://up.htmlacademy.ru/htmlcss/13/user/67126).
-* Наставник: Владислав Балабанович
+* Студент: [Юрий Стотыка](https://up.htmlacademy.ru/htmlcss/13/user/67126).
+* Наставник: [Владислав Балабанович] https://up.htmlacademy.ru/htmlcss/13/user/6394).
 
 ---
 
