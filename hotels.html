@@ -8,50 +8,237 @@
 
     <div class="container">
 
-      <nav class="menu">
+      <header class="header">
 
-        <a class="logo" href="index.html">
-          <img src="http://placehold.it/137x70" width="137" height="70" alt="Седона">
-        </a>
+        <div class="header-logo">
+          <a class="logo" href="index.html"><img src="http://placehold.it/137x70" width="137" height="70" alt="Седона"></a>
+        </div>
 
-        <ul>
-          <li>
-            <a href="#">Информация</a>
-          </li>
-          <li>
-            <a href="#">Фото и видео</a>
-          </li>
-          <li>
-            <a href="#">Карта штата</a>
-          </li>
-          <li>
-            <a href="#">Гостиницы</a>
-          </li>
-        </ul>
+        <nav class="header-menu">
+          <ul>
+            <li>
+              <a href="#">Информация</a>
+            </li>
+            <li>
+              <a href="#">Фото и видео</a>
+            </li>
+            <li>
+              <a href="#">Карта штата</a>
+            </li>
+            <li>
+              <a href="#">Гостиницы</a>
+            </li>
+          </ul>
+        </nav>
 
-      </nav>
+      </header>
+
+      <!-- ФИЛЬТР -->
+      <div class="filter">
+        <form action="/" method="get">
+
+          <section class="filter-block">
+            <h3>Инфраструктура:</h3>
+            <label><input type="checkbox" name="pool">Бассейн</label>
+            <label><input type="checkbox" name="parking">Парковка</label>
+            <label><input type="checkbox" name="Wi-fi">Wi-fi</label>
+          </section>
+
+          <section class="filter-block">
+            <h3>Тип жилья:</h3>
+            <label><input type="checkbox" name="hotel">Гостиница</label>
+            <label><input type="checkbox" name="motel">Мотель</label>
+            <label><input type="checkbox" name="apartments">Апартаменты</label>
+          </section>
+
+          <section class="filter-block-cost">
+            <h3>Стоимость в сутки (Р):</h3>
+
+            <div class="cost-input">
+              <div class="cost-min">
+                <label>
+                  <span>От</span><input type="text" name="cost-min" value="0">
+                </label>
+              </div>
+
+              <div class="cost-min">
+                <label>
+                  <span>До</span><input type="text" name="cost-max" value="3000">
+                </label>
+              </div>
+            </div>
+
+            <!-- маркеры делаются картинками или на css? полоски? -->
+            <div class="cost-slide">
+              <div class="cost-slide-dot">
+                <img src="http://placehold.it/20x23" alt="min">
+              </div>
+
+              <div class="cost-slide-dot">
+                <img src="http://placehold.it/20x23" alt="max">
+              </div>
+
+              <div class="cost-line-max"></div>
+              <div class="cost-line-current"></div>
+            </div>
+
+          </section>
+
+          <button type="submit" class="btn" href="/">Показать</button>
+
+        </form>
+      </div><!-- end filter -->
+
+      <!-- СОРТИРОВКА -->
+      <div class="sort-block">
+        <div class="found-number">
+          <h2>Найдено: 3</h2><!-- надо ли разделить заголовок и значение (3)? -->
+        </div>
+        <div class="sort-category">
+          <span>Сортировка:</span>
+          <a href="/"><span>По цене</span></a>
+          <a href="/"><span>По типу</span></a>
+          <a href="/"><span>По рейтингу</span></a>
+        </div>
+
+        <div class="sort-order">
+          <div class="sort-arrow">
+            <a href="/" class="icon-up-dir">icon-up-dir</a><!-- а как вставлять иконочный шрифт? -->
+          </div>
+          <div class="sort-arrow">
+            <a href="/" class="icon-down-dir">icon-down-dir</a>
+          </div>
+        </div>
+      </div><!-- end sort-block -->
+
+      <!-- ОТЕЛИ -->
+      <main class="found-hotels">
+
+        <div class="hotel">
+          <div class="hotel-img">
+            <a href="/">
+              <img src="http://placehold.it/135x90" alt="Amara Resort & Spa">
+            </a>
+          </div>
+
+          <div class="hotel-info">
+            <div class="hotel-title">
+              <a href="/">
+                <h2>Amara Resort & Spa</h2>
+              </a>
+            </div>
+            <div class="hotel-type">
+              <span>Гостиница</span>
+            </div>
+            <div class="hotel-price">
+              <span>От 3500 Р.</span>
+            </div>
+            <a class="blue-btn" href="/">Подробнее</a>
+            <a class="brown-btn" href="/">Забронировать</a>
+          </div>
+
+          <div class="hotel-value">
+            <div class="hotel-level">
+              <span>icon-star</span><!-- Звезды - это иконочный шрифт, как он вставляется? -->
+            </div>
+            <div class="hotel-rating">
+              <span>Рейтинг: 8,5</span><!-- надо ли разделить заголовок и значение (8,5)? -->
+            </div>
+          </div>
+
+        </div><!-- end hotel -->
+
+        <div class="hotel">
+          <div class="hotel-img">
+            <a href="/">
+              <img src="http://placehold.it/135x90" alt="Desert Quail Inn">
+            </a>
+          </div>
+
+          <div class="hotel-info">
+            <div class="hotel-title">
+              <a href="/">
+                <h2>Desert Quail Inn</h2>
+              </a>
+            </div>
+            <div class="hotel-type">
+              <span>Мотель</span>
+            </div>
+            <div class="hotel-price">
+              <span>От 2000 Р.</span>
+            </div>
+            <a class="blue-btn" href="/">Подробнее</a>
+            <a class="brown-btn" href="/">Забронировать</a>
+          </div>
+
+          <div class="hotel-value">
+            <div class="hotel-level">
+              <span>icon-star</span>
+            </div>
+            <div class="hotel-rating">
+              <span>Рейтинг: 8,9</span>
+            </div>
+          </div>
+
+        </div><!-- end hotel -->
+
+        <div class="hotel">
+          <div class="hotel-img">
+            <a href="/">
+              <img src="http://placehold.it/135x90" alt="Villas at Poco Diablo">
+            </a>
+          </div>
+
+          <div class="hotel-info">
+            <div class="hotel-title">
+              <a href="/">
+                <h2>Villas at Poco Diablo</h2>
+              </a>
+            </div>
+            <div class="hotel-type">
+              <span>Гостиница</span>
+            </div>
+            <div class="hotel-price">
+              <span>От 4000 Р.</span>
+            </div>
+            <a class="blue-btn" href="/">Подробнее</a>
+            <a class="brown-btn" href="/">Забронировать</a>
+          </div>
+
+          <div class="hotel-value">
+            <div class="hotel-level">
+              <span>icon-star</span>
+            </div>
+            <div class="hotel-rating">
+              <span>Рейтинг: 9,2</span>
+            </div>
+          </div>
+
+        </div><!-- end hotel -->
+
+      </main><!-- end found-hotels -->
 
 
-      <footer>
+      <footer class="footer">
 
-        <!-- КОНТАКТЫ -->
-        <section class="hashtag">
-          <a href="https://twitter.com/search?q=%23visitsedona&src=typd">
-            <h2>#visitsedona</h2>
-          </a>
-        </section>
+          <!-- КОНТАКТЫ -->
+          <section class="footer-hashtag">
+            <a href="https://twitter.com/search?q=%23visitsedona&src=typd">
+              <h2>#visitsedona</h2>
+            </a>
+          </section>
 
-        <!-- СОЦСЕТИ -->
-        <section class="social">
-          <a class="social-btn tw" href="#">Twitter</a>
-          <a class="social-btn fb" href="#">Facebook</a>
-          <a class="social-btn you" href="#">Youtube</a>
-        </section>
+          <!-- СОЦСЕТИ -->
+          <section class="footer-social">
+            <a class="btn btn-tw" href="#">Twitter</a>
+            <a class="btn btn-fb" href="#">Facebook</a>
+            <a class="btn btn-you" href="#">Youtube</a>
+          </section>
 
-        <section class="copyright">
-          <p>WEBSITE by</p>
-          <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
-        </section>
+          <section class="footer-copyright">
+            <p>WEBSITE by</p>
+            <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+          </section>
 
       </footer>
 
