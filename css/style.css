@@ -1,0 +1,29 @@
+body {
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  font-weight: normal;
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+/*кроме слогана на главной я не нашел что могло быть h1, неужели картинка Welcome? а внутри - Найдено 3?*/
+h1 {
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: bold;
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+/*это странно, но похоже они совпадают*/
+
+h2 {
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: bold;
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
+}
