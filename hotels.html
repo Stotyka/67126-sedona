@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Гостиницы</title>
+    <link href="css/normalize.css" rel="stylesheet" >
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -52,7 +54,7 @@
             <label><input type="checkbox" name="apartments">Апартаменты</label>
           </section>
 
-          <section class="filter-block-cost">
+          <div class="filter-block-cost">
             <h3>Стоимость в сутки (Р):</h3>
 
             <div class="cost-input">
@@ -71,19 +73,12 @@
 
             <!-- маркеры делаются картинками или на css? полоски? -->
             <div class="cost-slide">
-              <div class="cost-slide-dot">
-                <img src="http://placehold.it/20x23" alt="min">
-              </div>
-
-              <div class="cost-slide-dot">
-                <img src="http://placehold.it/20x23" alt="max">
-              </div>
-
-              <div class="cost-line-max"></div>
-              <div class="cost-line-current"></div>
+              <div class="cost-min-dot"></div>
+              <div class="cost-line"></div>
+              <div class="cost-max-dot"></div>
             </div>
 
-          </section>
+          </div>
 
           <button type="submit" class="btn" href="/">Показать</button>
 
@@ -238,7 +233,9 @@
 
           <section class="footer-copyright">
             <p>Website by</p>
-            <img src="/" width="113" height="40" alt="HTML Academy">
+            <a href="https://htmlacademy.ru">
+              <div class="footer-htmlacademy"></div>
+            </a>
           </section>
 
       </footer>

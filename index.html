@@ -3,13 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
+    <link href="css/normalize.css" rel="stylesheet" >
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
     <div class="container">
 
-      <header class="header">
+      <header class="header clearfix">
 
         <div class="header-logo">
           <a class="logo" href="index.html"><img src="img/001_header_logo.png" width="138" height="70" alt="Седона"></a>
@@ -36,11 +38,9 @@
 
       <div class="intro">
         <div class="welcome">
-          <img src="img/004_welcome.png2" width="458" height="352" alt="Welcome to the gorgeous Sedona">
+          <img src="img/004_welcome.png" width="458" height="352" alt="Welcome to the gorgeous Sedona">
         </div>
-        <div class="intro-line">
-          <img src="img/003_intro-line.png" width="1200" height="57">
-        </div>
+        <div class="intro-line"></div>
       </div><!-- end intro -->
 
       <div class="slogan">
@@ -48,19 +48,19 @@
         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </div>
 
-      <div class="couse">
+      <div class="couse clearfix">
         <div class="couse-blue">
-          <h2>Настоящий городок</h2>
-          <p>— №1 —</p>
-          <p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
+          <div class="couse-blue-content">
+            <h2>Настоящий городок</h2>
+            <p>— №1 —</p>
+            <p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
+          </div>
         </div>
-        <div class="couse-img">
-          <img src="img/005_couse01.jpg" width="800" height="256">
-        </div>
+        <div class="couse-img-right"></div>
       </div>
 
       <!-- ФИЧИ -->
-      <section class="features">
+      <section class="features clearfix">
         <div class="feature-item">
           <img src="img/006_feature_01.png" width="80" height="80">
           <h2 class="feature-name">Жилье</h2>
@@ -78,10 +78,8 @@
         </div>
       </section><!-- end features -->
 
-      <div class="couse">
-        <div class="couse-img">
-          <img src="img/005_couse02.jpg" width="800" height="256">
-        </div>
+      <div class="couse clearfix">
+        <div class="couse-img-left"></div>
         <div class="couse-blue">
           <h2>Там есть Мост дьявола</h2>
           <p>— №2 —</p>
@@ -89,7 +87,7 @@
         </div>
       </div>
 
-      <div class="couse">
+      <div class="couse clearfix">
 
         <div class="couse-grey">
           <h2>Небольшая площадь</h2>
@@ -115,7 +113,7 @@
       <div class="search-block">
         <div class="search-title">
           <span>Заинтересовались?</span>
-          <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
         </div>
 
         <div class="search-title-brown">
@@ -127,55 +125,37 @@
 
             <div class="search-date-in">
               <label>
-                <div class="input-name">
-                  <span>Дата заезда:</span>
-                </div>
-                <input type="text" name="date-in" value="24 Апреля 2016">
-                <div class="input-icon">
-                  <a href="/" class="icon-calendar">icon-calendar</a>
+                <span>Дата заезда:</span>
+                <div class="input">
+                  <input type="text" name="date-in" value="24 Апреля 2016">
                 </div>
               </label>
             </div>
 
             <div class="search-date-out">
               <label>
-                <div class="input-name">
-                  <span>Дата выезда:</span>
-                </div>
-                <input type="text" name="date-out" value="4 июля 2016">
-                <div class="input-icon">
-                  <a href="/" class="icon-calendar">icon-calendar</a>
+                <span>Дата выезда:</span>
+                <div class="input">
+                  <input type="text" name="date-out" value="4 июля 2016">
                 </div>
               </label>
             </div>
 
             <div class="search-adult">
               <label>
-                <div class="input-name">
-                  <span>Взрослые:</span>
-                </div>
-                <div class="input-icon">
-                  <a href="/" class="icon-minus">icon-minus</a>
-                </div>
+                <span>Взрослые:</span>
+                <button class="icon-minus"></button>
                 <input type="text" name="adult" value="2">
-                <div class="input-icon">
-                  <a href="/" class="icon-plus">icon-plus</a>
-                </div>
+                <button class="icon-plus"></button>
               </label>
             </div>
 
             <div class="search-kids">
               <label>
-                <div class="input-name">
-                  <span>Дети:</span>
-                </div>
-                <div class="input-icon">
-                  <a href="/" class="icon-minus">icon-minus</a>
-                </div>
+                <span>Дети:</span>
+                <button class="icon-minus"></button>
                 <input type="text" name="kids" value="0">
-                <div class="input-icon">
-                  <a href="/" class="icon-plus">icon-plus</a>
-                </div>
+                <button class="icon-plus"></button>
               </label>
             </div>
 
@@ -185,7 +165,6 @@
         </div><!-- end search -->
       </div><!-- end search-block -->
 
-<!-- не очень ясно как сделана карта, под футером и появляющимся поиском  -->
       <div class="map">
       </div>
 

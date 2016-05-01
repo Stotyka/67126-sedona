@@ -3,9 +3,53 @@ body {
   line-height: 21px;
   color: #333333;
   font-weight: normal;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
 }
+
+/*ИКОНОЧНЫЙ ШРИФТ*/
+
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+
+  font-family: "symbols-sedona";
+  src: url("../fonts/symbols-sedona.woff") format("woff"),
+       url("../fonts/symbols-sedona.woff2") format("woff2");
+}
+
+[class^="icon-"]::before,
+[class*=" icon-"]::before {
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.2em;
+  margin-left: 0.2em;
+
+  font-weight: normal;
+  line-height: 1em;
+  font-family: "symbols-sedona";
+  text-align: center;
+  text-transform: none;
+  text-decoration: inherit;
+  font-style: normal;
+  font-variant: normal;
+
+  speak: none;
+}
+
+.icon-facebook::before { content: "\66"; } /* "f" */
+.icon-twitter::before { content: "\74"; } /* "t" */
+.icon-up-dir::before { content: "\25b2"; } /* "▲" */
+.icon-down-dir::before { content: "\25bc"; } /* "▼" */
+.icon-star::before { content: "\2605"; } /* "★" */
+.icon-check-off::before { content: "\2610"; } /* "☐" */
+.icon-check-on::before { content: "\2611"; } /* "☑" */
+.icon-calendar::before { content: "\e800"; } /* "" */
+.icon-plus::before { content: "\e801"; } /* "" */
+.icon-minus::before { content: "\e802"; } /* "" */
+.icon-youtube::before { content: "\f39e"; } /* "" */
+
+
 
 /*кроме слогана на главной я не нашел что могло быть h1, неужели картинка Welcome? а внутри - Найдено 3?*/
 h1 {
@@ -26,4 +70,297 @@ h2 {
   font-weight: bold;
   font-family: "PT Sans", sans-serif;
   text-transform: uppercase;
+}
+
+.clearfix::after {
+  content: "";
+    display: table;
+  clear: both;
+}
+
+.container {
+  min-width: 768px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 6%;
+}
+
+
+/*ХЕДЕР*/
+
+.header {
+  min-height: 56px;
+}
+
+.header-logo {
+  min-height: 70px;
+  float: left;
+}
+
+.header-menu {
+  min-height: 56px;
+  float: right;
+}
+
+
+
+.intro {
+
+  background: #e3f0f8 url("../img/002_main_bgrnd.jpg") no-repeat 50% -83px;
+}
+
+.welcome {
+  width: 458px;
+  height: 352px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 76px;
+  padding-bottom: 23px;
+}
+
+.intro-line {
+  width: auto;
+  height: 57px;
+  background: url("../img/003_intro-line.png") no-repeat  50%;
+  background-size: 100% 57px;
+}
+
+
+
+
+.slogan {
+  width: 576px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 46px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.slogan p {
+  padding-top: 15px;
+}
+
+
+.couse {
+  height: 256px;
+}
+
+/*как центрируется содержимое?*/
+.couse-blue {
+  float: left;
+  width: 24.33%;
+  height: 100%;
+  color: #ffffff;
+  background: #81b3d2;
+  padding: 0 4.5% 0 4.5%;
+  text-align: center;
+
+  /*display: table-cell;
+  vertical-align: middle;*/
+}
+.couse-blue-content {
+  margin-top: 45px;
+}
+
+.couse-blue h2 {
+  display: block;
+  /*margin-top: 45px;*/
+}
+.couse-blue p {
+  display: block;
+  /*margin-top: 10px;*/
+}
+
+.couse-blue h2 {
+  color: #ffffff;
+}
+
+.couse-img-right {
+  float: left;
+  width: 66.66%;
+  height: 256px;
+  background: #81b3d2 url("../img/005_couse01_full.jpg") no-repeat  50%;
+}
+
+.couse-img-left {
+  float: left;
+  width: 66.66%;
+  height: 100%;
+  background: #81b3d2 url("../img/005_couse02_full.jpg") no-repeat  50%;
+}
+
+.features {
+    height: 330px;
+}
+
+.feature-item {
+  float: left;
+  width: 24.33%;
+  padding: 54 4.5% 0 4.5%;
+
+  text-align: center;
+}
+
+.couse-grey {
+  float: left;
+  width: 33.33%;
+  height: 100%;
+  background: #eeeeee;
+  text-align: center;
+}
+
+
+
+/*ФОРМА*/
+
+.search-block {
+  width: 568px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.search-title {
+  text-align: center;
+  }
+
+.search-title span {
+  display: block;
+  font-size: 30px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #000000;
+  margin-top: 56px;
+  margin-bottom: 30px;
+}
+
+.search-title p {
+  display: block;
+  line-height: 24px;
+  margin-bottom: 47px;
+}
+
+.search-title-brown {
+  height: 74px;
+  background: #766357;
+  text-align: center;
+  padding-top: 12px;
+}
+
+.search-title-brown h2 {
+  display: block;
+  color: #ffffff;
+}
+
+
+
+
+.search {
+  padding: 55px;
+  font-weight: bold;
+}
+
+.search-date-in,
+.search-date-out {
+  padding-bottom: 30px;
+}
+
+.search-date-in input,
+.search-date-out input {
+  float: right;
+  width: 346px;
+  height: 38px;
+  background: #f2f2f2;
+}
+
+
+.search-date-in .input::after {
+  content: "\e800";
+  position: relative;
+  top: 8px;
+  right: 30px;
+  font-family: "symbols-sedona";
+  color: #c2c2c2;
+  font-size: 21px;
+}
+
+.search-date-out .input::after {
+  content: "\e800";
+  position: relative;
+  top: 8px;
+  right: 30px;
+  font-family: "symbols-sedona";
+  color: #c2c2c2;
+  font-size: 21px;
+}
+
+
+
+
+
+
+
+
+
+
+/*ОТЕЛИ*/
+
+
+
+.filter {
+  width: auto;
+  height: 217px;
+  background: url("../img/020_filter_bgrnd.jpg");
+}
+
+
+
+/*СТОИМОСТЬ*/
+
+.filter-block-cost {
+  float: right;
+}
+
+.cost-slide {
+  width: 317px;
+  height: 2px;
+  margin-top: 20px;
+  margin-bottom: 32px;
+  background: rgba(255,255,255,0.3);
+
+}
+
+.cost-min-dot {
+  display: inline-block;
+  position: relative;
+  bottom: 9px;
+  width: 20px;
+  height: 22px;
+  background: url("../img/cost-slide-dot_sprite.png");
+}
+
+.cost-line {
+  display: inline;
+  position: absolute;
+  width: 230px;
+  height: 2px;
+  margin-right: 20px;
+  background: rgba(255,255,255,1);
+
+}
+
+.cost-max-dot {
+  display: inline-block;
+  float: right;
+  position: relative;
+  bottom: 9px;
+  right: 55px;
+  width: 20px;
+  height: 22px;
+  background: url("../img/cost-slide-dot_sprite.png");
+}
+
+.cost-min-dot:hover,
+.cost-max-dot:hover {
+  background-position: bottom;
 }
