@@ -62,17 +62,17 @@
       <!-- ФИЧИ -->
       <section class="features clearfix">
         <div class="feature-item">
-          <img src="img/006_feature_01.png" width="80" height="80">
+          <img src="img/006_feature_01.png" width="80" height="80" alt="Жилье">
           <h2 class="feature-name">Жилье</h2>
           <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </div>
         <div class="feature-item">
-          <img src="img/006_feature_02.png" width="80" height="80">
+          <img src="img/006_feature_02.png" width="80" height="80" alt="Еда">
           <h2 class="feature-name">Еда</h2>
           <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </div>
         <div class="feature-item">
-          <img src="img/006_feature_03.png" width="80" height="80">
+          <img src="img/006_feature_03.png" width="80" height="80" alt="Сувениры">
           <h2 class="feature-name">Сувениры</h2>
           <p>Не только китайского, но и местного производства!</p>
         </div>
@@ -126,38 +126,36 @@
 
             <div class="search-date-in">
               <label>
-                <span>Дата заезда:</span>
-                <div class="input">
+                  <span>Дата заезда:</span>
                   <input type="text" name="date-in" value="24 Апреля 2016">
-                </div>
+                  <!-- <button class="icon-calendar" type="button"></button> -->
               </label>
+              
             </div>
-
+            
             <div class="search-date-out">
               <label>
                 <span>Дата выезда:</span>
-                <div class="input">
-                  <input type="text" name="date-out" value="4 июля 2016">
-                </div>
+                <input type="text" name="date-out" value="4 июля 2016">
               </label>
+              <!-- <button class="icon-calendar" type="button"></button> -->
             </div>
 
+
+<!-- ------------как без id обернуть спан и инпут в лэйбл? ведь этому мешает кнопка с минусом -->
+
             <div class="search-adult">
-              <label>
-                <span>Взрослые:</span>
-                <button class="icon-minus"></button>
-                <input type="text" name="adult" value="2">
-                <button class="icon-plus"></button>
-              </label>
+                <label for="adult"><span>Взрослые:</span></label>
+                <button class="icon-minus" type="button"></button>
+                <input type="text" name="adult" id="adult" value="2">
+                <button class="icon-plus" type="button"></button>
             </div>
 
             <div class="search-kids">
-              <label>
-                <span>Дети:</span>
-                <button class="icon-minus"></button>
-                <input type="text" name="kids" value="0">
-                <button class="icon-plus"></button>
-              </label>
+              <label for="kids"><span>Дети:</span></label>
+              <button class="icon-minus" type="button"></button>
+              <input type="text" name="kids" id="kids" value="0">
+              <button class="icon-plus" type="button"></button>
             </div>
 
             <button type="submit" class="btn" href="/">Найти</button>
