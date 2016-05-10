@@ -30,7 +30,7 @@
             <li>
               <a href="#">Карта штата</a>
             </li>
-            <li>
+            <li class="active">
               <a href="#">Гостиницы</a>
             </li>
           </ul>
@@ -49,16 +49,42 @@
 
           <section class="filter-block">
             <h3>Инфраструктура:</h3>
-            <label><input type="checkbox" name="pool">Бассейн</label>
-            <label><input type="checkbox" name="parking">Парковка</label>
-            <label><input type="checkbox" name="Wi-fi">Wi-fi</label>
+
+            <label class="filer-checkbox">
+              <input type="checkbox" name="pool">Бассейн
+              <span class="checkbox-indicator"></span>
+            </label>
+
+            <label class="filer-checkbox">
+              <input type="checkbox" name="parking">Парковка
+              <span class="checkbox-indicator"></span>
+            </label>
+            
+            <label class="filer-checkbox">
+              <input type="checkbox" name="Wi-fi">Wi-fi
+              <span class="checkbox-indicator"></span>
+            </label>
+            
           </section>
 
           <section class="filter-block">
             <h3>Тип жилья:</h3>
-            <label><input type="checkbox" name="hotel">Гостиница</label>
-            <label><input type="checkbox" name="motel">Мотель</label>
-            <label><input type="checkbox" name="apartments">Апартаменты</label>
+
+            <label class="filer-checkbox">
+              <input type="checkbox" name="hotel">
+              <span class="checkbox-indicator"></span>Гостиница
+            </label>
+
+            <label class="filer-checkbox">
+              <input type="checkbox" name="motel">Мотель
+              <span class="checkbox-indicator"></span>
+            </label>
+
+            <label class="filer-checkbox">
+              <input type="checkbox" name="apartments">
+              <span class="checkbox-indicator"></span>Апартаменты
+            </label>
+
           </section>
 
 
@@ -81,9 +107,9 @@
             </div>
 
             <div class="cost-slide">
-              <!-- <div class="cost-min-dot"></div> -->
+              <div class="cost-min-dot"></div>
               <div class="cost-line"></div>
-              <!-- <div class="cost-max-dot"></div> -->
+              <div class="cost-max-dot"></div>
             </div>
     
             <button type="submit" class="btn">Показать</button>
@@ -115,12 +141,8 @@
         </div>
 
         <div class="sort-order">
-          <!-- <div class="sort-arrow"> -->
             <a href="#" class="icon-up-dir"></a>
-          <!-- </div> -->
-          <!-- <div class="sort-arrow"> -->
             <a class="icon-down-dir current"></a>
-          <!-- </div> -->
         </div>
       </div><!-- end sort-block -->
 
@@ -136,25 +158,25 @@
 
         <div class="hotel clearfix">
           <div class="hotel-img">
-            <a href="/">
+            <a href="#">
               <img src="img/021_hotel_01.jpg" width="135" height="90" alt="Amara Resort & Spa">
             </a>
           </div>
 
           <div class="hotel-info">
             <div class="hotel-title">
-              <a href="/">
+              <a href="#">
                 <h2>Amara Resort & Spa</h2>
               </a>
             </div>
             <div class="hotel-type">
               Гостиница
-            </div>
+            </div> 
             <div class="hotel-price">
               От 3500 Р.
-            </div>
-            <a class="blue-btn" href="/">Подробнее</a>
-            <a class="brown-btn" href="/">Забронировать</a>
+            </div><br>
+            <a class="blue-btn" href="#">Подробнее</a>
+            <a class="brown-btn" href="#">Забронировать</a>
           </div>
 
           <div class="hotel-value">
@@ -175,14 +197,14 @@
 
         <div class="hotel clearfix">
           <div class="hotel-img">
-            <a href="/">
+            <a href="#">
               <img src="img/021_hotel_02.jpg" width="135" height="90" alt="Desert Quail Inn">
             </a>
           </div>
 
           <div class="hotel-info">
             <div class="hotel-title">
-              <a href="/">
+              <a href="#">
                 <h2>Desert Quail Inn</h2>
               </a>
             </div>
@@ -191,9 +213,9 @@
             </div>
             <div class="hotel-price">
               От 2000 Р.
-            </div>
-            <a class="blue-btn" href="/">Подробнее</a>
-            <a class="brown-btn" href="/">Забронировать</a>
+            </div><br>
+            <a class="blue-btn" href="#">Подробнее</a>
+            <a class="brown-btn" href="#">Забронировать</a>
           </div>
 
           <div class="hotel-value">
@@ -212,14 +234,14 @@
 
         <div class="hotel clearfix">
           <div class="hotel-img">
-            <a href="/">
+            <a href="#">
               <img src="img/021_hotel_03.jpg" width="135" height="90" alt="Villas at Poco Diablo">
             </a>
           </div>
 
           <div class="hotel-info">
             <div class="hotel-title">
-              <a href="/">
+              <a href="#">
                 <h2>Villas at Poco Diablo</h2>
               </a>
             </div>
@@ -228,9 +250,9 @@
             </div>
             <div class="hotel-price">
               От 4000 Р.
-            </div>
-            <a class="blue-btn" href="/">Подробнее</a>
-            <a class="brown-btn" href="/">Забронировать</a>
+            </div><br>
+            <a class="blue-btn" href="#">Подробнее</a>
+            <a class="brown-btn" href="#">Забронировать</a>
           </div>
 
           <div class="hotel-value">
@@ -260,9 +282,9 @@
 
           <!-- СОЦСЕТИ -->
           <section class="footer-social">
-            <a href="/"><span class="icon-twitter"></span></a>
-            <a href="/"><span class="icon-facebook"></span></a>
-            <a href="/"><span class="icon-youtube"></span></a>
+            <a href="#"><span class="icon-twitter"></span></a>
+            <a href="#"><span class="icon-facebook"></span></a>
+            <a href="#"><span class="icon-youtube"></span></a>
           </section>
 
           <section class="footer-copyright">
