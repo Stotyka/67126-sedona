@@ -9,10 +9,6 @@ body {
   background-color: #f2f2f2;
 }
 
-
-
-/*ИКОНОЧНЫЙ ШРИФТ*/
-
 @font-face {
   font-weight: normal;
   font-style: normal;
@@ -52,12 +48,6 @@ body {
 .icon-plus::before { content: "\e801"; } /* "" */
 .icon-minus::before { content: "\e802"; } /* "" */
 .icon-youtube::before { content: "\f39e"; } /* "" */
-
-
-
-
-
-
 
 h1 {
   font-size: 21px;
@@ -102,19 +92,12 @@ h3 {
 
 }
 
-
-
-
-
-/*ХЕДЕР*/
-
 .header {
   position: relative;
   width: auto;
   height: 56px;
   margin: 0 auto;
   padding: 0 6%;
-
   text-align: center;
   font-size: 0;
 }
@@ -138,9 +121,9 @@ h3 {
 
 .header-menu li {
   display: inline-block;
+  vertical-align: middle;
   width: 22.5%;
   padding-top: 17px;
-
   font-size: 14px;
   font-weight: bold;
 }
@@ -184,10 +167,6 @@ li.empty {
   color: rgba(118,99,87,0.3);
 }
 
-
-
-
-
 .intro {
   background: #e4f1f9 url("../img/002_main_bgrnd.jpg") no-repeat 50% -80px;
 }
@@ -208,8 +187,6 @@ li.empty {
   background-size: 100% 57px;
 }
 
-
-
 .slogan {
   width: 576px;
   margin-right: auto;
@@ -222,8 +199,6 @@ li.empty {
 .slogan p {
   padding-top: 15px;
 }
-
-
 
 .couse {
   height: 256px;
@@ -268,8 +243,6 @@ li.empty {
   background: #e6b9a5 url("../img/005_couse02_full.jpg") no-repeat  50%;
 }
 
-
-
 .features {
   height: 330px;
 }
@@ -281,8 +254,6 @@ li.empty {
   vertical-align: middle;
   text-align: center;
 }
-
-
 
 .couse-grey {
   float: left;
@@ -303,13 +274,6 @@ li.empty {
   display: block;
   margin-top: 21px;
 }
-
-
-
-
-
-
-/*ФОРМА*/
 
 .search-block {
   width: 568px;
@@ -359,8 +323,6 @@ li.empty {
   color: rgba(255,255,255,0.3);
   background-color: #503e33;
 }
-
-
 
 .search {
   position: absolute;
@@ -412,6 +374,7 @@ li.empty {
 .search-date-in input,
 .search-date-out input {
   display: inline-block;
+  vertical-align: middle;
   width: 292px;
   background-color: #f2f2f2;
   font-size: 14px;
@@ -446,8 +409,6 @@ li.empty {
   color: #81b3d2;
 }
 
-
-
 .search-adult,
 .search-kids {
   float: left;
@@ -461,6 +422,8 @@ li.empty {
 .search-adult span,
 .search-kids span {
   display: inline-block;
+  vertical-align: top;
+  margin-top: 8px;
   width: 112px;
   font-size: 14px;
   font-weight: bold;
@@ -474,13 +437,14 @@ li.empty {
 .search-adult input,
 .search-kids input {
   display: inline-block;
+  vertical-align: top;
   width: 23px;
   background-color: #f2f2f2;
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
   border: none;
-  padding: 11px 0px 11px 15px;
+  padding: 10px 0px 11px 15px;
 }
 
 .icon-minus,
@@ -504,8 +468,6 @@ li.empty {
 .icon-plus:active {
   color: #81b3d2;
 }
-
-
 
 .btn {
   width: 100%;
@@ -539,17 +501,10 @@ li.empty {
   height: 594px;
 }
 
-
-
-
-
 .footer {
   width: auto;
   height: 120px;
   margin-top: -120px;
-/*  padding-top: 36px;
-  padding-bottom: 36px;
-*/
   background: rgba(254,254,254,0.9);
   text-align: center;
 }
@@ -565,7 +520,6 @@ li.empty {
   top: 31px;
   float: left;
   width: 33%;
-  /*margin-top: 27px;*/
 }
 
 .footer-hashtag a{
@@ -579,8 +533,6 @@ li.empty {
 .footer-hashtag h2:active {
   color: rgba(0,0,0,0.3);
 }
-
-
 
 .footer-social {
   position: relative;
@@ -618,8 +570,6 @@ li.empty {
   background: #609dc2;
 }
 
-
-
 .footer-copyright {
   position: relative;
   top: 36px;
@@ -649,25 +599,6 @@ li.empty {
 .footer-logo:active {
   background-position: bottom;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*ОТЕЛИ*/
-
-
 
 .filter {
   width: auto;
@@ -703,14 +634,11 @@ li.empty {
   display: none;
 }
 
-
 .filer-checkbox input[type="checkbox"] + .checkbox-indicator::before {
   content: "\2610";
   position: absolute;
-
   top: 2px;
   left: 0;
-  
   font-size: 26px;
   font-weight: normal;
   font-family: "symbols-sedona";
@@ -723,10 +651,6 @@ li.empty {
 .filer-checkbox:disabled {
   color: #6a6a6a;
 }
-
-
-
-/*СТОИМОСТЬ*/
 
 .filter-block-cost {
   float: right;
@@ -741,6 +665,7 @@ li.empty {
   border: 2px solid white;
   border-radius: 2px;
   text-align: center;  
+  font-size: 0;
 }
 
 .cost-min,
@@ -755,35 +680,36 @@ li.empty {
   position: absolute;
   top: 50%;
   left: 50%;
-
   width: 2px;
   height: 22px;
-
   background: #ffffff;
   transform: translate(-50%, -50%);
 }
 
 .cost-input span {
   display: inline-block;
+  vertical-align: middle;
   margin-right: 4px;
+  font-size: 14px;
   width: 45%;
   text-align: right;
 }
 
 .cost-input input {
   display: inline-block;
+  vertical-align: middle;
   width: 45%;
+  font-size: 14px;
+  margin-bottom: 1px;
   background: none;
   border: none;
   outline: none;  
   color: #ffffff;
-
 }
 
 .cost-input label {
   cursor: pointer;
 }
-
 
 .cost-slide {
   position: relative;
@@ -801,7 +727,6 @@ li.empty {
   background: url("../img/cost-slide-dot_sprite.png");
   bottom: -12px;
   left: 0%;
-  
   cursor: pointer;
 }
 
@@ -811,8 +736,8 @@ li.empty {
   margin-left: 0%
   margin-right: 20%;
   background: rgba(255,255,255,1);
-
 }
+
 .cost-max-dot {
   position: absolute;
   display: inline-block;
@@ -821,7 +746,6 @@ li.empty {
   background: url("../img/cost-slide-dot_sprite.png");
   bottom: -12px;
   right: 20%;
-
   cursor: pointer;
 }
 
@@ -837,14 +761,11 @@ li.empty {
   margin-left: auto;
   margin-right: auto;
   padding: 8px 0px;
-
   font-size: 14px;
   font-weight: normal;
-  
   border: 2px solid white;
   border-radius: 2px;
   background: none;
-
   cursor: pointer;
 }
 
@@ -852,13 +773,6 @@ li.empty {
   background-color: #ffffff;
   color: #000000;
 }
-
-
-
-
-
-
-/*СОРТИРОВКА*/
 
 .sort-block {
   padding: 0 6%;
@@ -902,8 +816,6 @@ li.empty {
   margin-left: 36px;
 }
 
-
-
 .sort-order {
   float: right;
   position: relative;
@@ -933,12 +845,6 @@ li.empty {
 .sort-order a.current {
   color: #81b3d2;
 }
-
-
-
-
-
-
 
 .hotel {
   min-width: 150px;
@@ -983,7 +889,6 @@ li.empty {
 }
 
 .blue-btn {
-  /*display: inline-block;*/
   font-weight: bold;
   color: #ffffff;
   padding: 5px 17px;
@@ -1001,7 +906,6 @@ li.empty {
 }
 
 .brown-btn {
-  /*display: inline-block;*/
   font-weight: bold;
   color: #ffffff;
   padding: 5px 17px;
@@ -1017,12 +921,8 @@ li.empty {
   background-color: #503e33;
 }
 
-
-
-
 .hotel-value {
   float: right;
-  /*position: relative;*/
   margin: 27px 0px 30px 0px;
   text-align: right;
 }
@@ -1044,8 +944,3 @@ li.empty {
   padding: 5px 12px;
   background-color: #f2f2f2;
 }
-
-
-
-
-
