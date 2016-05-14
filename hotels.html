@@ -1,17 +1,20 @@
 <!DOCTYPE html>
+
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
     <title>Гостиницы</title>
     <link href="css/normalize.css" rel="stylesheet" >
     <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
+
   <body>
 
     <div class="container">
 
-      <header class="header">
+      <header class="header clearfix">
 
         <div class="header-logo">
           <a href="index.html"><img src="img/001_header_logo.png" width="138" height="70" alt="Седона"></a>
@@ -25,8 +28,6 @@
             <li>
               <a href="#">Фото и видео</a>
             </li>
-            <li class="empty">
-            </li>
             <li>
               <a href="#">Карта штата</a>
             </li>
@@ -39,9 +40,11 @@
       </header>
 
       <div class="filter clearfix">
+
         <form action="/" method="get">
 
           <section class="filter-block">
+
             <h3>Инфраструктура:</h3>
 
             <label class="filer-checkbox">
@@ -62,6 +65,7 @@
           </section>
 
           <section class="filter-block">
+
             <h3>Тип жилья:</h3>
 
             <label class="filer-checkbox">
@@ -82,9 +86,11 @@
           </section>
 
           <div class="filter-block-cost">
+
             <h3>Стоимость в сутки (Р):</h3>
 
             <div class="cost-input clearfix">
+
               <div class="cost-min">
                 <label>
                   <span>От</span><input type="text" name="cost-min" value="0">
@@ -96,6 +102,7 @@
                   <span>До</span><input type="text" name="cost-max" value="3000">
                 </label>
               </div>
+
             </div>
 
             <div class="cost-slide">
@@ -113,9 +120,11 @@
       </div><!-- end filter -->
 
       <div class="sort-block clearfix">
+
         <div class="found-number">
           <h2>Найдено: 3</h2>
         </div>
+
         <div class="sort-category">
           <span>Сортировка:</span>
           <a class="current"><span>По цене</span></a>
@@ -127,11 +136,13 @@
             <a href="#" class="icon-up-dir"></a>
             <a class="icon-down-dir current"></a>
         </div>
+
       </div><!-- end sort-block -->
 
       <main class="found-hotels">
 
         <div class="hotel clearfix">
+
           <div class="hotel-img">
             <a href="#">
               <img src="img/021_hotel_01.jpg" width="135" height="90" alt="Amara Resort & Spa">
@@ -162,15 +173,14 @@
               <span class="icon-star"></span> 
             </div>
             <div class="hotel-rating">
-              <span>Рейтинг: 8,5</span><
-
+              <span>Рейтинг: 8,5</span>
             </div>
-
           </div>
 
         </div><!-- end hotel -->
 
         <div class="hotel clearfix">
+
           <div class="hotel-img">
             <a href="#">
               <img src="img/021_hotel_02.jpg" width="135" height="90" alt="Desert Quail Inn">
@@ -206,6 +216,7 @@
         </div><!-- end hotel -->
 
         <div class="hotel clearfix">
+
           <div class="hotel-img">
             <a href="#">
               <img src="img/021_hotel_03.jpg" width="135" height="90" alt="Villas at Poco Diablo">
@@ -268,6 +279,6 @@
 
     </div><!-- end container -->
 
-
   </body>
+
 </html>

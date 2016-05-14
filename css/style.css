@@ -83,13 +83,17 @@ h3 {
   clear: both;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   min-width: 768px;
   max-width: 1200px;
   margin: 0 auto;
   background-color: #ffffff;
   box-shadow: 0 5px 15px rgba(0,1,1,0.2);
-
 }
 
 .header {
@@ -97,48 +101,49 @@ h3 {
   width: auto;
   height: 56px;
   margin: 0 auto;
-  padding: 0 6%;
-  text-align: center;
-  font-size: 0;
+  padding: 0;
 }
 
 .header-logo {
   position: absolute;
-  left: 50%;
-  margin-left: -69px;
   width: 138px;
   height: 70px;
+  top: 0;
+  left: 50%;
+  margin-left: -69px;
 }
 
 .header-menu {
-  width: auto;
+  width: 100%;
   min-height: 56px;
+  padding: 0 6%;
 }
 
 .header-menu ul {
+  list-style: none;
+  margin: 0;
   padding: 0;
 }
 
 .header-menu li {
-  display: inline-block;
-  vertical-align: middle;
-  width: 22.5%;
+  float: left;
+  width: 20%;
   padding-top: 17px;
   font-size: 14px;
   font-weight: bold;
 }
 
-li.empty {
-  width: 10%;
+.header-menu li:nth-child(2) {
+   padding-right: 8%;
 }
 
 .header-menu li:nth-child(1),
 .header-menu li:nth-child(2) {
   text-align: left;
-
 }
-.header-menu li:nth-child(4),
-.header-menu li:nth-child(5) {
+
+.header-menu li:nth-child(3),
+.header-menu li:nth-child(4) {
   text-align: right;
 }
 
@@ -392,13 +397,11 @@ li.empty {
   background: none;
   border: none;
   outline: none;
-
   font-family: "symbols-sedona";
   color: #c2c2c2;
   font-size: 21px;
   font-weight: normal;
   cursor: pointer;
-
 }
 
 .icon-calendar:hover {
@@ -493,8 +496,6 @@ li.empty {
   outline: none;
 }
 
-
-
 .map {
   background: #f2f1ef url("../img/008_map.jpg") no-repeat 50%;
   width: auto;
@@ -513,7 +514,6 @@ li.empty {
   margin-top: 0;
   background: rgba(254,254,254,1);
 }
-
 
 .footer-hashtag {
   position: relative;
@@ -549,7 +549,6 @@ li.empty {
   max-height: 48px;
   margin: 0px 3px;
   padding: 13px 0px;
-
   font-size: 19px;
   color: #ffffff;
   background: #81b3d2;
@@ -610,7 +609,6 @@ li.empty {
 
 .filter-block {
   float: left;
-  /*margin-top: 10px;*/
 }
 
 .filter-block:nth-child(1) {
@@ -847,7 +845,7 @@ li.empty {
 }
 
 .hotel {
-  min-width: 150px;
+  min-height: 150px;
   border-bottom: 1px solid #e5e5e5;
   padding: 0 6%;
 }
@@ -872,6 +870,10 @@ li.empty {
 }
 
 .hotel-img {
+  width: 135px;
+  min-height: 90px;
+  display: table-cell;
+  vertical-align: middle;
   float: left;
   margin: 30px 31px 25px 0px;
 }
