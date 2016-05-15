@@ -517,11 +517,11 @@ img {
   height: 594px;
 }
 
-/*.map iframe {
-  max-width: auto;
+.map iframe {
+  width: 100%;
   height: 594px;
 }
-*/
+
 
 .footer {
   width: auto;
