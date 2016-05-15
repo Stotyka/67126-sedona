@@ -329,7 +329,7 @@ img {
   background-color: #503e33;
 }
 
-.search {
+.search-close {
   position: absolute;
   width: 458px;
   min-height: 255px;
@@ -339,6 +339,21 @@ img {
   font-weight: bold;
   background-color: #ffffff;
   box-shadow: 0 7px 15px rgba(0,0,0,0.15);
+  display: none;
+}
+
+.search-show {
+  display: block;
+  animation: search 0.4s;
+}
+
+@keyframes search{
+  from { transform: translateY(5px);
+     opacity: 0;
+   }
+  to {transform: translateY(0);
+     opacity: 100%;
+  }
 }
 
 .search-date-in,
@@ -497,10 +512,16 @@ img {
 }
 
 .map {
-  background: #f2f1ef url("../img/008_map.jpg") no-repeat 50%;
+  /*background: #f2f1ef url("../img/008_map.jpg") no-repeat 50%;*/
   width: auto;
   height: 594px;
 }
+
+/*.map iframe {
+  max-width: auto;
+  height: 594px;
+}
+*/
 
 .footer {
   width: auto;
